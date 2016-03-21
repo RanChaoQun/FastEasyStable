@@ -12,6 +12,15 @@ import java.lang.reflect.Field;
 
 public class ViewUtils {
 
+    public static int getLayoutId(Object obj) {
+        int id = -1;
+        LayoutInject layoutInject = obj.getClass().getAnnotation(LayoutInject.class);
+        if (layoutInject != null) {
+            id = layoutInject.layout();
+        }
+        return id;
+    }
+
     /**
      * @param activity
      */

@@ -5,6 +5,15 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
+/**
+ * 项目名称：OpenSource
+ * 类描述：
+ * 创建人：colorful-chao
+ * 创建时间：16/1/18 18:24
+ * 修改人：colorful
+ * 修改时间：16/1/18 18:24
+ * 修改备注：
+ */
 @Target(ElementType.FIELD)//
 @Retention(RetentionPolicy.RUNTIME)
 public @interface ViewInject {
